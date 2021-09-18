@@ -1,0 +1,78 @@
+.favorites{
+    position: fixed;
+    background-color: #fff;
+    right: 5px;
+    top: 90px;
+    border: 1px solid #DFE2E6;
+    z-index: 999;
+    min-width: 400px;
+    @media screen and (max-width: 992px) {
+        min-width: unset;
+    }
+    padding: 30px;
+    overflow-y: auto;
+    max-height: 460px;
+    &__header {
+        @media screen and (max-width: 992px) {
+            font-size: 18px;
+        }
+        margin-bottom: 30px;
+    }
+    &__item{
+        display: flex;
+        border-bottom: 1px solid #DFE2E6;
+        padding: 15px 0;
+        &__left {
+            &-img {
+                width: 100px;
+                height: 140px;
+                object-fit: cover;
+                margin-right: 15px;
+            }
+        }
+        &__right{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+
+            &-top{
+                display: flex;
+                justify-content: space-between;
+                &-name{
+                    font-size: var(--font-size-medium);
+                    color: var(--color-primary);
+                    max-width: 200px;
+                    @media screen and (max-width: 450px) {
+                        max-width: 80px;
+                    }
+                }
+                &-price {
+                    font-size: var(--font-size-large);
+                    color: var(--color-secondary);
+                    font-weight: bold; 
+                }
+            }
+            &-bottom {
+                display: flex;
+                justify-content: space-between;
+                &-right{
+                    background-color: #fff;
+                    border-radius: 8px;
+                    padding: 5px;
+                    cursor: pointer;
+                    box-shadow: 0px 3px 6px #00000029;
+                    display: flex;
+                    align-items: center;
+                    @media screen and (max-width: 992px) {
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

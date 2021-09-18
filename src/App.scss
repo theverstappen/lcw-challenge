@@ -1,0 +1,92 @@
+@import "./styles/variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+body, h2, p, button, div, em{
+    font-family: 'Rubik' !important;
+    margin: 0;
+    padding: 0;
+    font-style: normal !important;
+}
+.color-primary {
+    color: var(--color-primary);
+}
+.color-secondary {
+    color: var(--color-secondary);
+}
+.color-tertiary  {
+    color: var(--color-tertiary);
+}
+.color-additional {
+    color: var(--color-additional);
+}
+.font-size-xs {
+    font-size: var(--font-size-xs);
+    @media screen and (max-width: 992px) {
+        font-size: 12px;
+    }
+}
+.font-size-small {
+    font-size: var(--font-size-small);
+    @media screen and (max-width: 992px) {
+        font-size: 12px;
+    }
+}
+.font-size-medium {
+    font-size: var(--font-size-medium);
+    @media screen and (max-width: 992px) {
+        font-size: 14px;
+    }
+}
+.font-size-large {
+    font-size: var(--font-size-large);
+    @media screen and (max-width: 992px) {
+        font-size: 18px;
+    }  
+}
+.font-bold{
+    font-weight: bold;
+}
+.font-medium{
+    font-weight: 500;
+}
+.margin-bottom {
+    margin-bottom: 10px;
+}
+.app-icon{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    box-shadow: 0px 3px 6px #00000029;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    @media screen and (max-width: 992px) {
+        width: 24px;
+        margin-bottom: 15px;
+    }
+}
+.MuiSnackbarContent-message {
+    margin: 0 auto;
+}
+.MuiFormControl-root {
+    @media screen and (max-width: 992px) {
+        width: 100%;
+    }   
+}
+.dot {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  display: inline-block;
+  &:not(:first-child){
+      margin-left: -12px;
+  }
+}
+
+.header + section {
+    @media screen and (max-width: 992px) {
+    margin: 0 20px;
+    }  
+    margin: 0 35px;
+}
